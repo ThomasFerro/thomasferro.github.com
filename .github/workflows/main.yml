@@ -20,6 +20,7 @@ jobs:
           blog_title: Thomas Ferro
           post_page_template_path: /github/workspace/blog/postPageTemplate.go.html
           home_page_template_path: /github/workspace/blog/homePageTemplate.go.html
+          locale: en
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
