@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Ferro - Resume</title>
+    <link rel="stylesheet" href="/assets/styles/font.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/main.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/title.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/list.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/blockquote.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/figure.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Thomas Ferro - Software developer</h1>
+    </header>
+    <main>
+        <p>
+            As a full-stack developer, I am driven by a passion for my craft and a desire to apply my expertise for the benefit of clients and users.
+        </p>
+        <p>
+            I am motivated by designing high-quality solutions, particularly through methodologies that place business needs at the heart of development (Software Craftsmanship, Domain-Driven Design, Agile methodologies). My approach to software quality rests on two key pillars.
+        </p>
+        <p>
+            First: interpersonal quality. This involves active listening, clarifying misunderstandings, discussing potential solutions, and expressing needs; all while working within diverse team environments.
+        </p>
+        <p>
+            Second: technical quality. This means using the right tool for the job, finding the most relevant solution for a specific context, and demonstrating system reliability, partly through well-tailored testing suites.
+        <p>
+            Some additional activities than the one described in the "Experience" section. I have had the opportunity to prepare and conduct training sessions on the Vue.js framework for individuals undergoing a career change as well as for practicing developers. I have also worked on personal projects at various stages of my career for a range of reasons (such as an adaptation of the board game Armadöra: <a href="https://github.com/ThomasFerro/armadora" target="_blank" rel="noopener noreferrer">https://github.com/ThomasFerro/armadora</a>). Finally, I enjoy sharing what I have learned through articles (available here: <a href="https://thomasferro.github.io" target="_blank" rel="noopener noreferrer">https://thomasferro.github.io</a>).
+        </p>
+
+        <h2>Experiences</h2>
+
+        <h3>Senior software engineer at sunday (February 2026 to September 2026)</h3>
+
+        <p>Contributed to the development and support of the Payment Platform, ensuring the proper routing of funds to restaurants, staff, and sunday itself for all use cases managed in the products:</p>
+
+        <ul>
+            <li>Participated in requirements analysis and solution design (back-end and front-end) across various areas, notably integrations with major players in the online payment industry.</li>
+            <li>Key achievement: Played a significant role right from the start in a time-sensitive, business-critical project to migrate a large portion of our restaurant staff payment infrastructure following a mandatory partner change. The migration was completed on schedule and securely, with a level of autonomy that was highly valued by all affected teams and stakeholders.</li>
+            <li>At the initiative of a continuous improvement for our test suites to boost confidence when modifying production code. Initial results became evident during the refactoring of critical application components (specifically, money flows management).</li>
+            <li>Daily support: Monitoring environment health, refining production alerts based on feedback, and addressing various inquiries.</li>
+        </ul>
+
+        <h4>Development environments summary</h4>
+
+        <ul>
+            <li>Back-end: Kotlin (2.3) / Java (25), depending on the project. Various test suites using JUnit (6), Spring Framework (7), and Spring Boot (4.1). Build process managed via Gradle.</li>
+            <li>Front-end (limited involvement with this codebase): React (19), built with Vite and tested with Vitest, within an environment where our team independently deployed payment-related components.</li>
+            <li>Database: PostgreSQL. Asynchronous communication via Kafka. Interaction with and exposure of various APIs (HTTP / gRPC).</li>
+            <li>Continuous Integration and Continuous Deployment (CI/CD) aligned with PCI-DSS requirements.</li>
+        </ul>
+
+        <h3>Full-Stack developer at Agicap (November 2021 to February 2026)</h3>
+
+        <p>Involvement in the creation, development, and support of various projects:</p>
+
+        <ul>
+            <li>Card-based expense module enabling:</li>
+            <ul>
+                <li>Employees to request corporate payment cards and justify their expenses; </li>
+                <li>Finance teams to verify supporting documents and make them available in the pre-accounting module. Bank account and card management is handled by a partner;</li>
+            </ul>
+            <li>Reconciliation module matching invoices with associated bank transactions;</li>
+            <li>Expense claim management (employee submission and integrated reimbursement);</li>
+            <li>Pre-accounting processing for export to accounting software;</li>
+            <li>Budget management for cost center managers;</li>
+            <li>Cash flow forecast consolidation across multiple entities.</li>
+        </ul>
+
+        <p>For each project, participated in back-end and front-end development as well as the setup of development and testing environments (acceptance, integration, end-to-end, visual regression/screenshots, and unit tests, depending on the relevance of each test type to the specific context).</p>
+
+        <h4>Development environments summary</h4>
+
+        <ul>
+            <li>Back-end: C# (.NET up to version 9) with a strong focus on code quality (TDD, BDD using SpecFlow then Reqnroll) and product interactions to place business logic at the heart of development (DDD). Event-driven approach (without Event Sourcing). In the first experience within a monolith, and in subsequent projects to better-bounded repositories to facilitate independent development and deployment.</li>
+            <li>Front-end: Angular (up to version 18), Signals, RxJS, Nx, within an environment where each team deploys its micro-frontends independently.</li>
+            <li>Databases: MSSQL and PostgreSQL, primarily via Entity Framework. Asynchronous communication via RabbitMQ. Calls to various APIs (HTTP / GraphQL).</li>
+            <li>Continuous Integration and Deployment via GitLab CI, then GitHub Actions. </li>
+            <li>Cloud: Use of the platform implemented by the SRE team (primarily via ArgoCD), GCP.</li>
+        </ul>
+
+        <h3>Web developer / engineer at Sfeir (September 2020 to November 2021)</h3>
+
+        <p>Assignment at Adeo, working on an offer management project. The project aims to consolidate offers from various Business Units (Leroy Merlin, Bricoman, etc.) and third-party sellers for distribution across websites and, soon, physical stores.</p>
+
+        <h4>Development environments summary</h4>
+
+        <ul>
+            <li>Back-end: JS (Node.js, NestJS) with a strong focus on code quality (TDD and BDD approaches) and placing business logic at the heart of the product (DDD).</li>
+            <li>Data management: MongoDB (managed via Atlas), reading from and producing messages to Kafka topics, and utilizing the Kafka ecosystem (ksqldb).</li>
+            <li>Continuous Integration and Deployment via CircleCI; migration to GitHub Actions.</li>
+            <li>Cloud: Deployment and maintenance of various modules on GCP (GAE, Cloud Functions, and GKE).</li>
+            <li>Agile practices based on Scrum and Kanban frameworks (daily stand-ups, demos, retrospectives, and just-in-time flow).</li>
+            <li>Application of Agile values, ensuring everything is in place to deliver high-quality value to the customer.</li>
+        </ul>
+
+        <h3>Research and development engineer at Symbol-It (May 2018 to September 2020)</h3>
+
+        <p>A few weeks working in-house on a project that allowed primary school teachers to input validated competencies for each student. This tool was designed to generate a competency report compliant with Ministry of Education standards, thereby streamlining the teachers' workload.</p>
+
+        <p>A two-year assignment at Decathlon working on a project that enabled in-store sales staff to generate and send Point-of-Sale (POS) advertising materials to print. We primarily generated what we called "balisages", specifically product information sheets displaying details such as price, benefits, target audience, etc.</p>
+
+        <h4>Development environments summary</h4>
+
+        <ul>
+            <li>Front-end: HTML, CSS, JS (Vue.js).</li>
+            <li>Back-end: Java (version 8 with Spring).</li>
+            <li>Ops: Containerized applications using Docker; use of Rancher.</li>
+            <li>Agile practices based on Scrum and Kanban frameworks (daily meetings, demos, retrospectives, just-in-time workflow).</li>
+            <li>Application of Agile values, focusing on delivering high-quality value to the client.</li>
+        </ul>
+
+        <h3>Web development engineer at Neoledge, formely Archimed (August 2016 to May 2018)</h3>
+
+        <p>Contributed to the development of new features and provided support for Élise, an Electronic Document Management (EDM) system. This tool enables users to digitize documents and streamline various processes (such as recruitment and report approval).</p>
+
+        <p>Developed features and maintained tools integrated with the EDM software, including an Outlook plugin (Angular.js) and a Windows 10 desktop application (UWP).</p>
+
+        <p>Participated in the complete visual redesign of the software using Vue.js.</p>
+
+        <h4>Development environments summary</h4>
+
+        <ul>
+            <li>Front-end: HTML, CSS, JS (Vue.js and Angular.js), and UWP.</li>
+            <li>Back-end: C#.</li>
+            <li>Agile practices based on the Scrum framework (daily meetings, demos, retrospectives).</li>
+        </ul>
+    </main>
+</body>
+</html>
